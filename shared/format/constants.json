@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "matrixSize": 25,
+  "ledCount": 489,
+  "defaultFrameDurationMs": 100,
+  "minFrameDurationMs": 16,
+  "maxFrameDurationMs": 60000,
+  "maxHistory": 100,
+  "loopModes": ["loop", "bounce", "once"],
+  "defaultLoopMode": "loop",
+  "layerTypePixels": "pixels"
+}

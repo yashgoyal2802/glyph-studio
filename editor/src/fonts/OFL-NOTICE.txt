@@ -1,0 +1,1 @@
+Doto (c) The Doto Project Authors and Geist Mono (c) Vercel / Basement Studio are licensed under the SIL Open Font License 1.1 (https://openfontlicense.org). The font files here are subsets of the originals from Google Fonts.

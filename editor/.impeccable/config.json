@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "layout-transition",
+        "value": "*",
+        "files": [
+          "src/ui/Editor.svelte"
+        ],
+        "createdAt": "2026-11-11T14:53:12.221Z",
+        "reason": "User confirmed: the tray's height animation is intentional. It pushes the drawing board up and follows the finger while dragging, which transform/opacity or grid-template-rows cannot do."
+      }
+    ]
+  }
+}

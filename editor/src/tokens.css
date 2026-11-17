@@ -1,0 +1,107 @@
+/* Design tokens: the one place colours, type, shape and motion are defined. Dark is the lead theme; light follows the system. */
+
+@font-face { font-family: 'Doto'; font-weight: 400; font-display: swap; src: url('./fonts/doto-400.woff2') format('woff2'); }
+@font-face { font-family: 'Doto'; font-weight: 700; font-display: swap; src: url('./fonts/doto-700.woff2') format('woff2'); }
+@font-face { font-family: 'Doto'; font-weight: 900; font-display: swap; src: url('./fonts/doto-900.woff2') format('woff2'); }
+@font-face { font-family: 'Geist Mono'; font-weight: 400; font-display: swap; src: url('./fonts/geistmono-400.woff2') format('woff2'); }
+@font-face { font-family: 'Geist Mono'; font-weight: 500; font-display: swap; src: url('./fonts/geistmono-500.woff2') format('woff2'); }
+
+:root {
+  /* Surfaces and text (light values; dark below) */
+  --bg: #f1f0ec;
+  --surface: #fbfaf7;
+  --surface-2: #e7e5de;
+  --text: #151517;
+  --muted: #62626a;
+  --line: #d6d4cc;
+  --dot: #a9a8a2;            /* dotted dividers and unlit dots */
+  --accent: #d71921;         /* signal red: primary action, current/playing, warnings only */
+  --accent-ink: #ffffff;     /* text on the accent */
+  --lit: #151517;            /* a lit dot or lit key label */
+
+  /* Keys: raised controls that sink when pressed */
+  --key-top: #ffffff;
+  --key-bottom: #ecebe5;
+  --key-edge: #cfccc2;
+  --key-on-bg: #151517;
+  --key-on-ink: #ffffff;
+
+  /* The LED display well and its bezel (always dark: it is the hardware) */
+  --well: #0b0b0c;
+  --bezel-top: #3a3a3f;
+  --bezel-bottom: #0d0d0f;
+
+  /* Type */
+  --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Doto', var(--font-body);
+  --font-mono: 'Geist Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+
+  /* Shape */
+  --radius-s: 10px;
+  --radius-m: 14px;
+  --radius-l: 20px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 120ms;
+  --dur: 180ms;
+
+  color-scheme: light dark;
+  font-family: var(--font-body);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e0e10;
+    --surface: #18181b;
+    --surface-2: #232327;
+    --text: #f4f4f2;
+    --muted: #8d8d93;
+    --line: #2a2a2e;
+    --dot: #55555b;
+    --accent: #ff2a34;
+    --lit: #ffffff;
+    --key-top: #2b2b30;
+    --key-bottom: #202024;
+    --key-edge: #0a0a0b;
+    --key-on-bg: #0f0f11;
+    --key-on-ink: #ffffff;
+  
+  }
+}
+
+/* Explicit choices (used for testing both themes without changing the phone's setting). */
+:root[data-theme="dark"] {
+    --bg: #0e0e10;
+    --surface: #18181b;
+    --surface-2: #232327;
+    --text: #f4f4f2;
+    --muted: #8d8d93;
+    --line: #2a2a2e;
+    --dot: #55555b;
+    --accent: #ff2a34;
+    --lit: #ffffff;
+    --key-top: #2b2b30;
+    --key-bottom: #202024;
+    --key-edge: #0a0a0b;
+    --key-on-bg: #0f0f11;
+    --key-on-ink: #ffffff;
+  
+}
+:root[data-theme="light"] {
+  --bg: #f1f0ec;
+  --surface: #fbfaf7;
+  --surface-2: #e7e5de;
+  --text: #151517;
+  --muted: #62626a;
+  --line: #d6d4cc;
+  --dot: #a9a8a2;            /* dotted dividers and unlit dots */
+  --accent: #d71921;         /* signal red: primary action, current/playing, warnings only */
+  --accent-ink: #ffffff;     /* text on the accent */
+  --lit: #151517;            /* a lit dot or lit key label */
+  --key-top: #ffffff;
+  --key-bottom: #ecebe5;
+  --key-edge: #cfccc2;
+  --key-on-bg: #151517;
+  --key-on-ink: #ffffff;
+}

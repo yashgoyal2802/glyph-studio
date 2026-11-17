@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Glyph Studio</string>
+    <string name="toy_name_1">Toy 1</string>
+    <string name="toy_name_2">Toy 2</string>
+    <string name="toy_name_3">Toy 3</string>
+    <string name="toy_name_4">Toy 4</string>
+    <string name="toy_name_5">Toy 5</string>
+    <string name="toy_summary">Plays the design you assigned to this slot in Glyph Studio</string>
+</resources>

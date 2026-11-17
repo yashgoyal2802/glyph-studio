@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Glyph Toy preview for "Toy 3": a ring with 3 dots. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5"
+        android:pathData="M14.00,100.00a86.00,86.00 0 1,0 172.00,0a86.00,86.00 0 1,0 -172.00,0z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M87.00,54.00a13.00,13.00 0 1,0 26.00,0a13.00,13.00 0 1,0 -26.00,0zM126.84,123.00a13.00,13.00 0 1,0 26.00,0a13.00,13.00 0 1,0 -26.00,0zM47.16,123.00a13.00,13.00 0 1,0 26.00,0a13.00,13.00 0 1,0 -26.00,0z" />
+</vector>

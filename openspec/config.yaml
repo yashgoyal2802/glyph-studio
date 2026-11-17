@@ -1,0 +1,40 @@
+schema: spec-driven
+
+context: |
+  Personal Android app for designing custom Glyph Matrix designs/animations and running them as Glyph Toys on a Nothing Phone (3).
+  Target hardware: Nothing Phone (3), 25x25 Glyph Matrix, per-pixel brightness 0-255.
+  Built on Nothing's official GlyphMatrix Developer Kit (.aar, permission com.nothing.ketchum.permission.ENABLE); Glyph Toys are statically declared services (action com.nothing.glyph.TOY).
+  App-driven matrix display (setAppMatrixFrame) requires phone system version 20250801+.
+  Sideloaded APK for personal use; Play Store publishing is out of scope unless stated.
+  Developed on Windows 11.
+
+# Project context (optional)
+# Add only constraints that should guide OpenSpec artifacts and workflows.
+# Include constraints an agent cannot infer by reading the code.
+# Keep general project documentation and discoverable codebase facts out.
+# Example:
+#   context: |
+#     Designs and tasks must cover Windows, macOS, and Linux
+#     Write all artifacts in Spanish
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always state what is out of scope
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing
